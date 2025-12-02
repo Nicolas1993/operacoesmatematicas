@@ -1,0 +1,22 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Compilar testes
+      run: |
+        gcc operacoesmatematicas_test.c -o operacoes_test
+
+    - name: Executar testes
+      run: ./operacoes_test.
