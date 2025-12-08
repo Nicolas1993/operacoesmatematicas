@@ -16,7 +16,8 @@ jobs:
 
     - name: Compile tests
       run: |
-        gcc multiplicar.c dividir.c operacoesmatematicas_test.c -o testes
+        gcc multiplicador.c dividir.c operacoesmatematicas_test.c -o testes
 
     - name: Run tests
       run: ./testes
+
