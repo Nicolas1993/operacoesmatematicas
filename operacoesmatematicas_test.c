@@ -1,12 +1,11 @@
 #include <assert.h>
 #include <stdio.h>
 
-#include "multiplicar.c"
-#include "dividir.c"
+int multiplicar(int a, int b);
+int dividir(int a, int b);
 
 int main() {
 
-    
     assert(multiplicar(3, 4) == 12);
     assert(multiplicar(-2, 5) == -10);
 
